@@ -1,5 +1,6 @@
 ### Instructions for using the Dolphin Scheduler's Ambari plug-in
 
+#打包的时候可以指定prifile 
 #### Note
 
 1. This document is intended for users with a basic understanding of Ambari

@@ -1,0 +1,70 @@
+
+
+
+<!--#打包的时候可以指定prifile-->
+
+        <!--<assembly xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+          <!--xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.0.0 http://maven.apache.org/xsd/assembly-2.0.0.xsd">-->
+    <!--<id>package-tar</id>-->
+    <!--<formats>-->
+        <!--&lt;!&ndash; 输出格式 &ndash;&gt;-->
+        <!--<format>tar.gz</format>-->
+    <!--</formats>-->
+    <!--<includeBaseDirectory>true</includeBaseDirectory>-->
+    <!--<fileSets>-->
+        <!--<fileSet>-->
+            <!--<directory>${project.basedir}</directory>-->
+            <!--<includes>-->
+                <!--<include>README.md</include>-->
+            <!--</includes>-->
+        <!--</fileSet>-->
+        <!--&lt;!&ndash; 定义代码目录与输出目录映射 &ndash;&gt;-->
+        <!--<fileSet>-->
+            <!--<directory>${project.basedir}/target/classes</directory>-->
+            <!--<outputDirectory>config</outputDirectory>-->
+            <!--<includes>-->
+                <!--<include>**.md</include>-->
+                <!--<include>**.xml</include>-->
+                <!--<include>**.yml</include>-->
+                <!--<include>**.yaml</include>-->
+                <!--<include>**.txt</include>-->
+                <!--<include>**.properties</include>-->
+                <!--<include>/static/**</include>-->
+                <!--<include>/function/**</include>-->
+            <!--</includes>-->
+        <!--</fileSet>-->
+        <!--<fileSet>-->
+            <!--<directory>logs</directory>-->
+            <!--<outputDirectory>/logs</outputDirectory>-->
+            <!--<excludes>-->
+                <!--<exclude>/*.log</exclude>-->
+                <!--<exclude>/backup/*.log</exclude>-->
+            <!--</excludes>-->
+            <!--<useDefaultExcludes>true</useDefaultExcludes>-->
+        <!--</fileSet>-->
+        <!--<fileSet>-->
+            <!--<fileMode>755</fileMode>-->
+            <!--&lt;!&ndash; 打包前将该目录下的文件换行符替换成LF &ndash;&gt;-->
+            <!--<lineEnding>unix</lineEnding>-->
+            <!--<directory>script</directory>-->
+            <!--<outputDirectory>/script</outputDirectory>-->
+            <!--<useDefaultExcludes>true</useDefaultExcludes>-->
+            <!--<includes>-->
+                <!--<include>/*</include>-->
+            <!--</includes>-->
+            <!--&lt;!&ndash;<excludes>&ndash;&gt;-->
+            <!--&lt;!&ndash;<exclude>shutdown.sh</exclude>&ndash;&gt;-->
+            <!--&lt;!&ndash;<exclude>startup.sh</exclude>&ndash;&gt;-->
+            <!--&lt;!&ndash;<exclude>assembly.sh</exclude>&ndash;&gt;-->
+            <!--&lt;!&ndash;</excludes>&ndash;&gt;-->
+        <!--</fileSet>-->
+    <!--</fileSets>-->
+    <!--&lt;!&ndash; 依赖包打入lib下s &ndash;&gt;-->
+    <!--<dependencySets>-->
+        <!--<dependencySet>-->
+            <!--<useProjectArtifact>true</useProjectArtifact>-->
+            <!--<outputDirectory>/lib</outputDirectory>-->
+            <!--<scope>runtime</scope>-->
+        <!--</dependencySet>-->
+    <!--</dependencySets>-->
+<!--</assembly>-->
